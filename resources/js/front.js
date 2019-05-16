@@ -6,6 +6,7 @@
 
 require('./bootstrap');
 
+
 window.Vue = require('vue');
 
 /**
@@ -20,6 +21,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('header-social-component', require('./components/front/headerSocialComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -28,4 +30,16 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#body'
+});
+
+
+require('./files/front/jquery.simpleTicker');
+
+jQuery(document).ready(function () {
+    $.simpleTicker($("#ticker-fade"),{
+        speed : 1000,
+        delay : 10000,
+        easing : 'swing',
+        effectType:'fade'
+    });
 });

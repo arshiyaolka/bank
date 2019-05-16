@@ -4,7 +4,7 @@
 }
 .ticker ul li{
     width: 100%;
-    display: block;
+    display: none;
     padding: 17px 12px;
 }
 ul.social-icon{
@@ -17,7 +17,10 @@ ul.social-icon li{
 
 #topbar-link{
 
-    margin: 15px 0;
+    margin: 15px 0 !important;
+}
+#topbar-link li{
+    display: inline-block;
 }
 #topbar-link i{
     vertical-align: -6px;
@@ -102,6 +105,49 @@ ul.social-icon li{
     url(/fonts/IRANSansWeb.ttf?c26a9eb202b3ef6455281f0335cfffe9) format('truetype');
 }
 
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/maticons.woff?012cf6a10129e2275d79d6adac7f3b02) format('woff');
+
+}
+
+@font-face {
+    font-family: 'glyphicons' ;
+    src: url(/fonts/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format('woff');
+
+}
+
+.material-icons{
+    font-family: 'Material Icons', serif !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-size: 18px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: rtl;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    -webkit-font-feature-settings: 'liga';
+            font-feature-settings: 'liga';
+}
+
+
+
 *,body{
 
     font-family: IRANSans, sans-serif !important;
@@ -116,6 +162,9 @@ ol,ul,dl{
      padding: 0 !important;
 }
 
+a:hover{
+    text-decoration:none!important;
+}
 
 .shadow-s{
 

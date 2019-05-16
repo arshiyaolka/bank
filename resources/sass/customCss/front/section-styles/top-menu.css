@@ -4,7 +4,7 @@
 }
 .ticker ul li{
     width: 100%;
-    display: block;
+    display: none;
     padding: 17px 12px;
 }
 ul.social-icon{
@@ -17,7 +17,10 @@ ul.social-icon li{
 
 #topbar-link{
 
-    margin: 15px 0;
+    margin: 15px 0 !important;
+}
+#topbar-link li{
+    display: inline-block;
 }
 #topbar-link i{
     vertical-align: -6px;
